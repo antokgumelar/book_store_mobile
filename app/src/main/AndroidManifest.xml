@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESSS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/renbi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/renbi"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RenbiStore"
+        tools:targetApi="31">
+        <activity
+            android:name=".Edit"
+            android:exported="false" />
+        <activity
+            android:name=".Add"
+            android:exported="false" />
+        <activity
+            android:name=".MyDBHandler"
+            android:exported="false" />
+        <activity
+            android:name=".ThankYou"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".FilosofiPhoto2"
+            android:exported="false" />
+        <activity
+            android:name=".FilosofiPhoto1"
+            android:exported="false" />
+        <activity
+            android:name=".FilosofiPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".YouDoPhoto2"
+            android:exported="false" />
+        <activity
+            android:name=".YouDoPhoto1"
+            android:exported="false" />
+        <activity
+            android:name=".YouDoPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".QuaterPhoto2"
+            android:exported="false" />
+        <activity
+            android:name=".QuarterPhoto1"
+            android:exported="false" />
+        <activity
+            android:name=".QuarterPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".Photo"
+            android:exported="false" />
+        <activity
+            android:name=".Photo2"
+            android:exported="false" />
+        <activity
+            android:name=".Photo1"
+            android:exported="false" />
+        <activity
+            android:name=".Video"
+            android:exported="false" />
+        <activity
+            android:name=".Sosmed"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Book"
+            android:exported="false" />
+        <activity
+            android:name=".Store"
+            android:exported="false" />
+        <activity
+            android:name=".Form"
+            android:exported="false" />
+        <activity
+            android:name=".Filosofi"
+            android:exported="false" />
+        <activity
+            android:name=".YouDo"
+            android:exported="false" />
+        <activity
+            android:name=".Quarter"
+            android:exported="false" />
+        <activity
+            android:name=".Mantappu"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
